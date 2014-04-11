@@ -1,3 +1,4 @@
+//var oneone, onetwo, onethree, twofour, twofive, twosix, warhawk, vampire, mirage, lightning, sabre, spartan,
 function printoutput(){
     document.getElementById('bigthing').style.display = 'none';
     document.getElementById('printtext').style.display = 'block';
@@ -15,9 +16,12 @@ function sitrep(){
         delta = document.getElementById('sitrep_supplies').value,
         echo = document.getElementById('sitrep_equipment').value,
         foxtrot = document.getElementById('sitrep_morale').value,
-        golf = document.getElementById('sitrep_comments').value,
-        output = document.getElementById('output').value,
-        time = new Date(),
+        golf = document.getElementById('sitrep_comments').value;
+    if (alpha == '' && bravo == '' && charlie == '' && delta == '' && echo == '' && foxtrot == '' && golf == ''){
+    	return
+    }
+    var output = document.getElementById('output').value,
+    	time = new Date(),
         time = String(time),
         time = time.substring(0, 21),
         out = time + " | SITREP | Callsign: " + alpha + " | Location:" + bravo + " | Current Objective: " + charlie + " | Level of Supplies: " + delta + " | Equipment Status: " + echo + " | Morale: " + foxtrot + " | Comments: "+ golf +'\n';
@@ -39,8 +43,11 @@ function casevac(){
         echo = document.getElementById('casevac_nature').value,
         foxtrot = document.getElementById('casevac_movement').value,
         golf = document.getElementById('casevac_measure').value,
-        hotel = document.getElementById('casevac_comments').value,
-        output = document.getElementById('output').value,
+        hotel = document.getElementById('casevac_comments').value;
+    if (duff == '' && alpha == '' && bravo == '' && charlie == '' && delta == '' && echo == '' && foxtrot == '' && golf == ''){
+    	return
+    }
+    var output = document.getElementById('output').value,
         time = new Date(),
         time = String(time),
         time = time.substring(0, 21),
@@ -61,8 +68,11 @@ function contact(){
         bravo = document.getElementById('contact_grid').value,
         charlie = document.getElementById('contact_units').value,
         delta = document.getElementById('contact_success').value,
-        echo = document.getElementById('contact_objective').value,
-        output = document.getElementById('output').value,
+        echo = document.getElementById('contact_objective').value;
+    if (alpha == '' && bravo == '' && charlie == '' && delta == '' && echo == ''){
+    	return
+    }
+    var output = document.getElementById('output').value,
         time = new Date(),
         time = String(time),
         time = time.substring(0, 21),
@@ -87,8 +97,11 @@ function bushfire(){
         india = document.getElementById('bushfire_actiontaken').value,
         juliet = document.getElementById('bushfire_casualties').value,
         kilo = document.getElementById('bushfire_route').value,
-        lima = document.getElementById('bushfire_info').value,
-        output = document.getElementById('output').value,
+        lima = document.getElementById('bushfire_info').value;
+    if (duff == '' && alpha == '' && bravo == '' && charlie == '' && delta == '' && echo == '' && foxtrot == '' && golf == '' && hotel == '' && india == '' && juliet == '' && kilo == '' && lima == ''){
+    	return
+    }
+    var output = document.getElementById('output').value,
         time = new Date(),
         time = String(time),
         time = time.substring(0, 21),
@@ -116,8 +129,11 @@ function noticas(){
         charlie = document.getElementById('noticas_person').value,
         delta = document.getElementById('noticas_injury').value,
         echo = document.getElementById('noticas_place').value,
-        foxtrot = document.getElementById('noticas_time').value,
-        output = document.getElementById('output').value,
+        foxtrot = document.getElementById('noticas_time').value;
+    if (duff == '' && alpha == '' && bravo == '' && charlie == '' && delta == '' && echo == '' && foxtrot == ''){
+    	return
+    }
+    var output = document.getElementById('output').value,
         time = new Date(),
         time = String(time),
         time = time.substring(0, 21),
@@ -144,8 +160,11 @@ function flood(){
         india = document.getElementById('flood_actiontaken').value,
         juliet = document.getElementById('flood_casualties').value,
         kilo = document.getElementById('flood_comments').value,
-        lima = document.getElementById('flood_info').value,
-        output = document.getElementById('output').value,
+        lima = document.getElementById('flood_info').value;
+    if (duff == '' && alpha == '' && bravo == '' && charlie == '' && delta == '' && echo == '' && foxtrot == '' && golf == '' && hotel == '' && india == '' && juliet == '' && kilo == '' && lima == ''){
+    	return
+    }
+    var output = document.getElementById('output').value,
         time = new Date(),
         time = String(time),
         time = time.substring(0, 21),
@@ -171,8 +190,11 @@ function maintdem(){
         bravo = document.getElementById('maintdem_grid').value,
         charlie = document.getElementById('maintdem_supplies').value,
         delta = document.getElementById('maintdem_timeloc').value,
-        echo = document.getElementById('maintdem_info').value,
-        output = document.getElementById('output').value,
+        echo = document.getElementById('maintdem_info').value;
+    if (alpha == '' && bravo == '' && charlie == '' && delta == '' && echo == ''){
+    	return
+    }
+    var output = document.getElementById('output').value,
         time = new Date(),
         time = String(time),
         time = time.substring(0, 21),
@@ -192,8 +214,11 @@ function lost(){
         delta = document.getElementById('lost_last').value,
         echo = document.getElementById('lost_assistance').value,
         foxtrot = document.getElementById('lost_crossroads').value,
-        golf = document.getElementById('lost_action').value,
-        output = document.getElementById('output').value,
+        golf = document.getElementById('lost_action').value;
+    if (duff == '' && alpha == '' && bravo == '' && charlie == '' && delta == '' && echo == '' && foxtrot == '' && golf == ''){
+    	return
+    }
+    var output = document.getElementById('output').value,
         time = new Date(),
         time = String(time),
         time = time.substring(0, 21),
@@ -211,8 +236,11 @@ function lost(){
 function chat(){
     var alpha = document.getElementById('chat_sender').value,
         bravo = document.getElementById('chat_reciever').value,
-        charlie =document.getElementById('chat_details').value,
-        output = document.getElementById('output').value,
+        charlie =document.getElementById('chat_details').value;
+    if (alpha == '' && bravo == '' && charlie == ''){
+    	return
+    }
+    var output = document.getElementById('output').value,
         time = new Date(),
         time = String(time),
         time = time.substring(0, 21),
